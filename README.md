@@ -1,4 +1,4 @@
-![Image](https://i.ibb.co/mrQ9nL4Q/bearfing.png)
+![Image](https://i.ibb.co/TDmYxt09/freecam.png)
 
 # Randolio: Free Cam
 
@@ -8,5 +8,3 @@ If you feel like it could be written even better or have cool feature updates, m
 ## Credits
 
 - Original by Kiminaze https://github.com/Kiminaze/cinematiccam/tree/master
-
-![Image2](https://i.ibb.co/0j1h9vvW/image.png)
