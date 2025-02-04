@@ -8,3 +8,7 @@ If you feel like it could be written even better or have cool feature updates, m
 ## Credits
 
 - Original by Kiminaze https://github.com/Kiminaze/cinematiccam/tree/master
+
+## Preview
+
+- https://streamable.com/sa6l9p
