@@ -187,7 +187,7 @@ end
 RegisterCommand(Config.CommandName, function()
     lib.registerMenu({
         id = 'cinematic_cam_menu',
-        title = 'Cinematic Camera',
+        title = 'Câmera Cinemática',
         position = 'top-right',
         onSideScroll = function(selected, scrollIndex, args)
             if selected == 2 then
@@ -216,15 +216,16 @@ RegisterCommand(Config.CommandName, function()
             end
         end,
         options = {
-            {label = 'Toggle Camera', checked = camActive, icon = 'camera'},
-            {label = 'Camera Filters', values = Config.Filters, icon = 'camera', defaultIndex = currFilter, description = 'Use arrow keys to navigate filters. Hit enter to reset the filter to normal.'},
-            {label = 'Toggle Depth of Field', checked = dofOn, icon = 'eye', description = 'Toggle Depth of Field effect.'},
-            {label = 'Toggle Black Bars', checked = barsOn, icon = 'film', description = 'Toggle cinematic bars.'},
-            {label = 'Toggle Minimap', checked = not IsRadarHidden(), icon = 'map', description = 'Toggle the minimap.'},
-            {label = 'Depth of Field Near', values = Config.NearDof, icon = 'left-right', description = 'Adjust the near focus distance.'},
-            {label = 'Depth of Field Far', values = Config.FarDof, icon = 'left-right', description = 'Adjust the far focus distance.'},
-            {label = 'Depth of Field Strength', values = Config.StrengthDof, icon = 'left-right', description = 'Adjust the strength of the DoF effect.'},
-        }
+    {label = 'Ligar/Desligar Câmera', checked = camActive, icon = 'camera'},
+    {label = 'Filtros da Câmera', values = Config.Filters, icon = 'camera', defaultIndex = currFilter, description = 'Use as setas para navegar pelos filtros. Pressione Enter para redefinir para o filtro padrão.'},
+    {label = 'Ligar/Desligar Profundidade', checked = dofOn, icon = 'eye', description = 'Ativa ou desativa o efeito de profundidade de campo.'},
+    {label = 'Ligar/Desligar Barras Pretas', checked = barsOn, icon = 'film', description = 'Ativa ou desativa as barras cinematográficas.'},
+    {label = 'Ligar/Desligar Minimapa', checked = not IsRadarHidden(), icon = 'map', description = 'Ativa ou desativa o minimapa.'},
+    {label = 'Profundidade de Campo - Próximo', values = Config.NearDof, icon = 'left-right', description = 'Ajusta a distância do foco próximo.'},
+    {label = 'Profundidade de Campo - Distante', values = Config.FarDof, icon = 'left-right', description = 'Ajusta a distância do foco distante.'},
+    {label = 'Profundidade de Campo', values = Config.StrengthDof, icon = 'left-right', description = 'Ajusta a intensidade do efeito de profundidade de campo.'},
+}
+
     }, function(selected, scrollIndex, args)
         if selected == 2 then
             ClearTimecycleModifier()
